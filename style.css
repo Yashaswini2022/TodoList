@@ -1,0 +1,117 @@
+html { 
+    height: 100%; 
+    min-height: 800px;
+}
+body {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+}
+.app {
+    margin: 50px;
+    border: 3px solid rgb(210, 25, 25);
+    padding: 30px;
+    height: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(175, 235, 252);
+    font-family: sans-serif;
+}
+.heading {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(205, 248, 255);
+    text-align: center;
+}
+.heading__title {
+    font-family: 'Monoton', cursive;
+    align-content: center;
+    font-size: 4rem;
+}
+
+.heading__sub-title {
+    font-size: 1rem;
+}
+.todo {
+    margin: 20px;
+    padding: 20px;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    background-color: rgb(205, 255, 253);
+}
+.todo::-webkit-scrollbar {    width: 10px;}
+.todo::-webkit-scrollbar-track {background: rgb(205, 245, 255);}
+.todo::-webkit-scrollbar-thumb {background: rgb(173, 233, 230);}
+.todo::-webkit-scrollbar-thumb:hover {background: #555;}
+.todo_list {
+    list-style: none;
+    padding: 0;
+}
+.todo_item {
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todo_item:hover {
+    cursor: pointer;
+}
+.todo_icon-tick {
+    font-size: 2rem;
+    min-width: 50px;
+}
+.todo_text {
+    vertical-align: middle;
+    font-size: 1.6rem;
+    flex-wrap: nowrap;
+}
+.todo_text.cross-out {
+    text-decoration: line-through;
+}
+.todo_text {
+    cursor: pointer;
+}
+.todo_icon-delete {
+    font-size: 2rem;
+    min-width: 50px;
+    text-align: right;
+}
+.todo_icon-delete {
+    cursor: pointer;
+}
+.new {
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(205, 243, 255);
+}
+.new_form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border: none;
+}
+.new_input {
+    vertical-align: middle;
+    margin: 0;
+    width: 95%;
+    background: transparent;
+    font-size: 1.6rem;
+    outline: none;
+    border: none;
+    outline-width: 0;
+    font-family: sans-serif;
+}
+.new_submit {
+    font-size: 2rem;
+    min-width: 50px;
+    text-align: right;
+}
+.new_submit:hover {
+    cursor: pointer;
+}
